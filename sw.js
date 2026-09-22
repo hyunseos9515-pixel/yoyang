@@ -1,5 +1,5 @@
 const V = 'yoyanglog-v1';
-const FILES = ['./index.html', './manifest.json', './icon.svg'];
+const FILES = ['./index.html', './manifest.json', './icon.jpg'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(FILES)));
